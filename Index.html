@@ -3,24 +3,99 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Welcome</title>
+  <title>Welcome Rena B. Olivo</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #eef6fa;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background-color: #ffffff;
+      margin: 0;
+      padding: 2rem;
+      color: #333;
+      text-align: center;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #0078d4;
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-top: 0.5rem;
+    }
+
+    .subtext {
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 2rem;
+    }
+
+    .cards {
       display: flex;
       justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
+      gap: 2rem;
+      flex-wrap: wrap;
     }
-    h1 {
-      font-size: 3rem;
-      color: #004080;
+
+    .card {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 1rem;
+      width: 280px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+    .card h3 {
+      margin-top: 1rem;
+      font-size: 1.2rem;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    .card a {
+      display: inline-block;
+      margin-top: 0.5rem;
+      color: #0078d4;
+      text-decoration: none;
+    }
+
+    .emoji {
+      font-size: 2rem;
     }
   </style>
 </head>
 <body>
-  <h1>Welcome Rena B. Olivo</h1>
+  <div class="logo">🌐 Microsoft Azure</div>
+  <div class="emoji">🎉</div>
+  <h1>Welcome Rena B. Olivo!</h1>
+  <div class="subtext">Your site is live and ready. Here are some next steps:</div>
+
+  <div class="cards">
+    <div class="card">
+      <img src="https://learn.microsoft.com/favicon.ico" alt="Azure" height="40">
+      <h3>Learn about Azure Static Web Apps</h3>
+      <p>See how SWA builds and deploys web apps from a GitHub repo to Azure—automatically.</p>
+      <a href="https://learn.microsoft.com/azure/static-web-apps/">SWA overview</a>
+    </div>
+
+    <div class="card">
+      <img src="https://code.visualstudio.com/favicon.ico" alt="VS Code" height="40">
+      <h3>Create from VS Code</h3>
+      <p>Build and debug apps using the Azure Static Web Apps extension for VS Code.</p>
+      <a href="https://marketplace.visualstudio.com/items?itemName=ms-azuretools.azure-static-web-apps">Download the extension</a>
+    </div>
+
+    <div class="card">
+      <img src="https://github.githubassets.com/favicons/favicon.svg" alt="GitHub" height="40">
+      <h3>Install the SWA CLI</h3>
+      <p>Develop locally with the Static Web Apps CLI—test, debug, and deploy.</p>
+      <a href="https://learn.microsoft.com/azure/static-web-apps/cli">Install now</a>
+    </div>
+  </div>
 </body>
 </html>
